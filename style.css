@@ -1,0 +1,206 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+/* Estiliza o corpo da página */
+
+
+body {
+
+    
+    font-family: "Pixelify Sans", sans-serif; /* Define a fonte padrão */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Estiliza os títulos h1 */
+.container {
+    position: relative; /* Cria um contexto de posicionamento para a imagem */
+  }
+  
+  .logostar {
+    width: 480px;
+    height: 200px;
+    position: relative;
+    top: 120px;
+    right: -500px;
+  }
+  .gato { 
+    
+    width: 300px;
+    height: 115px;
+    position: relative;
+    top: 380px;
+    left: 570px;
+    z-index: 1; 
+  }
+  .junimos {
+    width: 300px;
+    height: 50px;
+    position: relative;
+    top: 133px;
+    left: -700px;
+    
+  }
+  .conversa{
+    width: 90%;
+    height: 300px;
+    position: relative;
+    top: 130px;
+    left: 60px;
+    z-index: 0;
+  }
+
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    position:relative;
+    top:-150px;  
+    z-index: 1;
+    background: transparent;
+    width: 70rem; /* Largura dos inputs */
+    height: 15px;
+    border: transparent; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+   
+    margin-bottom: 0rem; /* Espaçamento abaixo dos inputs */
+    font-family: "Pixelify Sans", sans-serif; /* Define a fonte padrão */
+    color: #000000; /* Cor do texto */
+    font-size: 3rem; /* Tamanho da fonte */
+    }
+    
+
+/* Estiliza os botões dentro das seções */
+section button {
+    position: relative;
+    width: 100px; /* Largura dos inputs */
+    height: 150px;
+    top: -250px;
+    right: -550px;
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    
+     ;
+    background-color: transparent;
+    
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    z-index: 1;
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60%; /* Largura máxima da caixa de resultados */
+    height: 175px; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    padding: 0.5rem; /* Espaçamento interno */
+    z-index: 4;
+    position: relative;
+    top: -320px;
+    right: -100px;
+}
+/*edita a barra de rolagem*/
+::-webkit-scrollbar {
+  width: 10px; /* Largura da barra */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Fundo da trilha */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2); /* Cor da barra de rolagem */
+  border-radius: 10px; /* Borda arredondada */
+}
+.item-resultado {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .imagem-texto {
+    display: flex;
+   
+  }
+  
+  .imagem-texto img {
+    
+    width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 150px;
+    position:relative;
+    top:20px;
+    margin-right: 20px;
+  }
+  .imagem-adicional {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: 5px; /* Ajusta o espaçamento entre as imagens */
+  }
+  
+  .imagem-adicional img {
+    width: 5%; /* Define a largura de cada imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: -50px;
+      }
+/* Estiliza cada item de resultado */
+.item-resultado {
+   
+    
+    background: transparent; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 4rem; /* Tamanho da fonte */
+    color: #000000; /* Cor do texto */
+   
+}
+
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */   
+    color: #000000; /* Cor do texto dos links */
+    font-size: 1.5rem; /* Tamanho da fonte */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #000000; /* Cor do texto */
+    font-size: 2rem; /* Tamanho da fonte */
+    
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    /* Cor de fundo do rodapé */
+    background-color: #87b7ff;
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0; /* Espaçamento interno */
+    width: 40%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 10px; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+}

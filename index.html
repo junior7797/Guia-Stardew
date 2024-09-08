@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--define a linguagem principal do projeto-->
+<html lang="pt-br">
+
+<head>
+    <!--apresentação para que o html seja lido corretamente fazendo o link com CSS para estilização-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guia Stardew Valley</title>
+    <style>
+        /*define o fundo do projeto*/
+        body {
+            
+        background-image: url('fundostardew.gif.gif');
+        background-size: contain;
+      }
+            /* Outras propriedades de estilo, se necessário */
+        
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <!--define as imagens que aparecem na tela, incluindo gifs e pngs-->
+        <div class="container"> 
+        <img src="logostar.png.png" alt="Stardew Valley" class="logostar"> 
+        <img src="gato.gif.gif" alt="gato faante" class="gato">
+        <img src="junimo.gif.gif" alt="Junimos" class="junimos">
+        <img src="caixadetexto.png" alt="caixa de texto" class="conversa">
+    </div>
+    </header>
+    <main>
+        <section>
+           <!--define a mensagem do input-->
+                <input type="text" placeholder="Digite sua mensagem" id="campo-pesquisa">
+              
+              <!--cria e estiliza o botao-->
+            <button onclick="pesquisar()"><img src="lupa.png" alt="pesquisar"></button>
+        </section>
+        <!--cria classe e id para resultados-->
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+    </main>
+    <footer>
+        <!--cria o rodapé-->
+        <p>2024 - guia Stardew Valley. Todos os direitos reservados utilizando informações do proprio jogo e comunidade stardew, em conjunto com stardew.wiki</p>
+        <p>Entre em contato pelo email: alejuba77@gmail.com</p>
+    </footer>
+    <!--faz o link para as pastas dados e app do java script-->
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
